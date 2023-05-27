@@ -4,9 +4,7 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
-function ExpenseItem(props) {
-  const [title, setTitle] = useState(props.title);
-
+const ExpenseItem = (props) => {
   return (
     <li>
       <Card className="expense-item">
@@ -18,6 +16,6 @@ function ExpenseItem(props) {
       </Card>
     </li>
   );
-}
+};
 
 export default ExpenseItem;
